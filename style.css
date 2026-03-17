@@ -22,6 +22,12 @@ body{
         transparent 100%
       );
     background-size: var(--s) calc(var(--s) * 0.577350269);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+a{
+  cursor: pointer;
 }
 
 /*NAVBAR*/
@@ -72,18 +78,18 @@ body{
 /*BANNER*/
 
 .banner-conteiner{
-    width: 94%;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     display: flex;
     background: rgba(19, 19, 19, 0.76);
-    
-    padding: 40px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     margin-top: -10PX;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .banner{
@@ -95,7 +101,7 @@ body{
 }
 
 .banner-text{
-    padding: 0px;
+    
     color: #ffffff;
 }
 
@@ -118,7 +124,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 
@@ -232,6 +238,7 @@ body{
 
 /* From Uiverse.io by aguerquin */ 
 .button-icon {
+    margin-top: 10px;
     display: flex;
     border: 3px #fff solid;
     width: fit-content;
@@ -299,11 +306,15 @@ body{
 .div-2{
     justify-content: center;
     display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+
 }
 
 
 .card2 {
-    margin-top: -50px;
     width: 100%;
     max-width: 390px;
     height: 70px;
@@ -364,18 +375,26 @@ body{
 
   /*SOBRE MIM*/
 
-  .container-sobremim{
-    margin-left: 20vw;
-    margin-right: 20vw;
-    margin-top: 16vh;
-    margin-bottom: 18vh;
-
+  .container_sobremim{
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: black;
+    align-content: center;
+    transition: 0.5s;
+    right: 2000px;
   }
 
   .sobremim{
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 15vw;
   }
 
   .sobremim h1{
@@ -393,9 +412,18 @@ body{
   }
 
   .conteiner-projetos{
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 5vh;
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    text-align: center;
+    flex-wrap: wrap;
+    top: 0;
+    background-color: black;
+    align-content: center;
+    transition: 0.5s;
+    margin-top: -2000px;
   }
 
   .projetos{
@@ -421,8 +449,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-top: 8vh;
+  gap: 2px;
+  
   flex-wrap: wrap;
 }
 
