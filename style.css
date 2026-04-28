@@ -535,3 +535,85 @@ a{
 .card3:hover > strong {
   opacity: 0;
 }
+
+.container_conhecimentos{
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  top: 0;
+  background-color: black;
+  align-content: center;
+  transition: 0.5s;
+  margin-top: -2000px;
+  height: 100vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.container_conhecimentos p{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+    
+}
+
+.container_conhecimentos h2{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  border: 1px dashed #ffffff;
+  
+}
+
+.imgs_linguagens {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.imgs_linguagens img {
+    width: 64px;  
+    height: 64px;
+    border-radius: 10px;
+    
+    /* Aplicação da animação */
+    animation-name: flutuar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; /* Movimento suave */
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0px); 
+    }
+    50% {
+        transform: translateY(-15px); 
+    }
+    100% {
+        transform: translateY(0px); 
+    }
+}
+
+
+.imgs_linguagens img:nth-child(odd) {
+    animation-delay: 0.5s; /* Atraso para ícones ímpares */
+}
+
+.imgs_linguagens img:nth-child(3n) {
+    animation-delay: 1s; /* Atraso diferente para cada terceiro ícone */
+}
+
+.imgs_linguagens img:nth-child(5n) {
+    animation-delay: 1.5s;
+}

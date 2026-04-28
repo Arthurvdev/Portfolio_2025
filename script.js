@@ -9,6 +9,11 @@ function inicio(){
 
      const containerProjetos = document.querySelector('.conteiner-projetos');
      containerProjetos.style.marginTop = '-2000px';
+
+     // Esconde a seção "Conhecimentos"
+
+     const containerConhecimentos = document.querySelector('.container_conhecimentos');
+     containerConhecimentos.style.marginTop = '-2000px';
 }
 
 function sobreMim(){
@@ -19,6 +24,11 @@ function sobreMim(){
     const containerSobremim = document.querySelector('.container_sobremim');
     containerSobremim.scrollIntoView({ behavior: 'smooth' });
     containerSobremim.style.right = '0px';
+
+    // Esconde a seção "Conhecimentos"
+
+     const containerConhecimentos = document.querySelector('.container_conhecimentos');
+     containerConhecimentos.style.marginTop = '-2000px';
 }
 
 function projetos(){ 
@@ -34,4 +44,17 @@ function projetos(){
     containerProjetos.style.marginTop = '0px';
     containerProjetos.scrollIntoView({ behavior: 'smooth' });
 
+    // Esconde a seção "Conhecimentos"
+
+     const containerConhecimentos = document.querySelector('.container_conhecimentos');
+     containerConhecimentos.style.marginTop = '-2000px';
+
+}
+
+
+function conhecimentos(){
+    const containerConhecimentos = document.querySelector('.container_conhecimentos');
+    containerConhecimentos.scrollIntoView({ behavior: 'smooth' });
+    const containerProjetos = document.querySelector('.conteiner-projetos');
+    containerConhecimentos.style.marginTop = '0px';
 }
