@@ -32,7 +32,11 @@ function sobreMim(){
 }
 
 function projetos(){ 
-    
+    // Esconde a seção "Conhecimentos"
+
+     const containerConhecimentos = document.querySelector('.container_conhecimentos');
+     containerConhecimentos.style.marginTop = '-2000px';
+     
     const containerSobremim = document.querySelector('.container_sobremim');
     containerSobremim.style.right = '2000px';
      window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -44,10 +48,7 @@ function projetos(){
     containerProjetos.style.marginTop = '0px';
     containerProjetos.scrollIntoView({ behavior: 'smooth' });
 
-    // Esconde a seção "Conhecimentos"
-
-     const containerConhecimentos = document.querySelector('.container_conhecimentos');
-     containerConhecimentos.style.marginTop = '-2000px';
+    
 
 }
 

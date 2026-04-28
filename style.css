@@ -424,12 +424,14 @@ a{
     align-content: center;
     transition: 0.5s;
     margin-top: -2000px;
+    justify-content: center;
   }
 
   .projetos{
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
   }
 
   .projetos h1{
@@ -437,9 +439,8 @@ a{
     font-size: 45px;
     color: #ffffff;
     border: 1px dashed #ffffff;
-    margin-left: 0vw;
-    margin-right: 50vw;
-    margin-top: 10vh;
+    text-align: center;
+    padding: 20px;
   }
 
   /*projetos*/
@@ -567,7 +568,7 @@ a{
   font-size: 25px;
   color: #ffffff;
   border: 1px dashed #ffffff;
-  
+  padding: 10px;
 }
 
 .imgs_linguagens {
