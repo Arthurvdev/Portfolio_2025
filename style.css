@@ -618,3 +618,23 @@ a{
 .imgs_linguagens img:nth-child(5n) {
     animation-delay: 1.5s;
 }
+
+.linkedin_button{
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.linkedin_button img{
+    width: 50px;
+    transition: 0.5s;
+}
+
+.linkedin_button img:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}

@@ -1,16 +1,8 @@
-const wooshSound = document.getElementById('woosh_sound');
-const wooshSound2 = document.getElementById('woosh_sound2');
-const wooshSound3 = document.getElementById('woosh_sound3');
-const wooshSound4 = document.getElementById('woosh_sound4');
+const btn_linkedin = document.querySelector('.linkedin_button');
 
-const categoriaSobreMim = document.querySelector('.categoria_sobremim');
-const categoriaProjetos = document.querySelector('.categoria_projetos');
-const categoriaConhecimentos = document.querySelector('.categoria_conhecimentos');
-
-
-
-
-
+btn_linkedin.addEventListener('click', () => {
+    window.open('https://www.linkedin.com/in/arthur-vinícius-monteiro/', '_blank');
+});
 
 function inicio(){
 
