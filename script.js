@@ -1,3 +1,17 @@
+const wooshSound = document.getElementById('woosh_sound');
+const wooshSound2 = document.getElementById('woosh_sound2');
+const wooshSound3 = document.getElementById('woosh_sound3');
+const wooshSound4 = document.getElementById('woosh_sound4');
+
+const categoriaSobreMim = document.querySelector('.categoria_sobremim');
+const categoriaProjetos = document.querySelector('.categoria_projetos');
+const categoriaConhecimentos = document.querySelector('.categoria_conhecimentos');
+
+
+
+
+
+
 function inicio(){
 
     // Esconde a seção "Sobre Mim" e volta para o topo da página
@@ -32,11 +46,12 @@ function sobreMim(){
 }
 
 function projetos(){ 
+
     // Esconde a seção "Conhecimentos"
 
      const containerConhecimentos = document.querySelector('.container_conhecimentos');
      containerConhecimentos.style.marginTop = '-2000px';
-     
+
     const containerSobremim = document.querySelector('.container_sobremim');
     containerSobremim.style.right = '2000px';
      window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -47,15 +62,18 @@ function projetos(){
     const containerProjetos = document.querySelector('.conteiner-projetos');
     containerProjetos.style.marginTop = '0px';
     containerProjetos.scrollIntoView({ behavior: 'smooth' });
-
-    
-
 }
 
 
 function conhecimentos(){
+
+    //Esconde a seção "Projetos"
+
+    const containerProjetos2 = document.querySelector('.conteiner-projetos');
+    containerProjetos2.style.marginTop = '-2000px';
+
     const containerConhecimentos = document.querySelector('.container_conhecimentos');
     containerConhecimentos.scrollIntoView({ behavior: 'smooth' });
     const containerProjetos = document.querySelector('.conteiner-projetos');
-    containerConhecimentos.style.marginTop = '0px';
+    containerConhecimentos.style.marginTop = '0vh';
 }

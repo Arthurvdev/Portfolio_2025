@@ -553,7 +553,7 @@ a{
   padding-right: 10vw;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  z-index: 20;
 }
 
 .container_conhecimentos p{
